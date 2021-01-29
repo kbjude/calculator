@@ -27,23 +27,10 @@ Technologies Used
 React JS
 HTML
 CSS
-Contributors
+
+### Contributers:
 👤 Jude Kajura
 
-GitHub: @kbjude
-Twitter:@balindakj
-LinkedIn: kajura-jude
-About
-No description, website, or topics provided.
-Topics
-Resources
- Readme
-Releases
-No releases published
-Create a new release
-Packages
-No packages published
-Publish your first package
-Languages
-JavaScript
-100.0%
+GitHub: [@kbjude](https://github.com/kbjude)
+Twitter:[@balindakj](https://twitter.com/balindakj)
+LinkedIn: [kajura-jude](https://www.linkedin.com/feed/)
