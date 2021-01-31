@@ -1,5 +1,5 @@
-import buttonPanel from './ButtonPanel'
 import './App.css';
+import buttonPanel from './ButtonPanel.js'
 
 const App = () => {
   return (
