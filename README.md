@@ -20,7 +20,7 @@ npm start dev
 This will get you running
 
 ### Live Version
-Netlify [Live](https://young-sierra-01905.herokuapp.com/) Link
+Find the [Live](https://young-sierra-01905.herokuapp.com/) Link here
 
 
 Technologies Used
