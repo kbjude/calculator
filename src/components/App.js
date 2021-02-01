@@ -1,10 +1,9 @@
 import './App.css';
-import ButtonPanel from './ButtonPanel.js'
+import ButtonPanel from './ButtonPanel.js';
 
 const App = () => {
   return (
-    <ButtonPanel name="AC" />
-    <ButtonPanel ac="AC" />
+    <ButtonPanel ac="AC" addition="+" subraction="-" modulus="%" division="/"/>
   );
 }
 
