@@ -1,9 +1,10 @@
 import './App.css';
-import buttonPanel from './ButtonPanel.js'
+import ButtonPanel from './ButtonPanel.js'
 
 const App = () => {
   return (
-    <buttonPanel name="AC" />
+    <ButtonPanel name="AC" />
+    <ButtonPanel ac="AC" />
   );
 }
 

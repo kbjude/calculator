@@ -1,9 +1,10 @@
 import React from "react";
-export default function buttonPanel(name){
+
+export default function ButtonPanel({ac, additionSubraction, }) {
     return (
         <div>
             <button>
-                {name}
+                {ac}
             </button>
         </div>
     )
