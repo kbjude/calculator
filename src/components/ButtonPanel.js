@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function ButtonPanel({
-    ac, addition, subraction, modulus, division,
+    ac, addition, modulus, division,
     seven, eight, nine, multiple,
     four, five, six, minus,
     one, two, three, plus,
@@ -16,9 +16,6 @@ export default function ButtonPanel({
                 </button>
                 <button>
                     {addition}
-                </button>
-                <button>
-                    {subraction}
                 </button>
                 <button>
                     {modulus}

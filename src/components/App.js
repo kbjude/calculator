@@ -3,10 +3,7 @@ import ButtonPanel from './ButtonPanel.js';
 
 const App = () => {
   return (
-    <ButtonPanel ac="AC" addition="+" subraction="-" modulus="%" division="/" seven="7" eight="8" nine="9" multiple="X"/>,
-    <ButtonPanel     seven="7" eight="8" nine="9" multiple="X" four="4" five="5" six="6" minus="-" one="1" two="2" three="3" plus="+" />
-
-
+    <ButtonPanel ac="AC" addition="+/-" modulus="%" division="÷" seven="7" eight="8" nine="9" multiple="X" seven="7" eight="8" nine="9" multiple="X" four="4" five="5" six="6" minus="-" one="1" two="2" three="3" plus="+" zero="0" dot="." equals="="/>
   );
 }
 
