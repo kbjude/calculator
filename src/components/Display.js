@@ -3,16 +3,18 @@ import PropTypes from 'prop-types';
 const Display = props => {
     const {result} = props;
     return(
-        {result}
+        <h1>
+            {result}
+        </h1>
     );
 };
 
 Display.defaultProps = {
-    result: '0'
-}
+    result: '0',
+};
 
 Display.propTypes = {
-    result: PropTypes.string,
+    result: PropTypes.string
 }
 
 export default Display;

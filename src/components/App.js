@@ -2,10 +2,12 @@ import './App.css';
 import ButtonPanel from './ButtonPanel.js';
 import Display from './Display';
 
-const App = () => {
+function App() {
   return (
-    <Display />,
-    <ButtonPanel />
+    <>
+      <Display />
+      <ButtonPanel />
+    </>
   );
 }
 
