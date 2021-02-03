@@ -1,5 +1,5 @@
 import './App.css';
-import ButtonPanel from './ButtonPanel.js';
+import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 
 function App() {
