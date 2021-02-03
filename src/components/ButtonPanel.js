@@ -1,81 +1,37 @@
 import React from "react";
+import Button from "./Button";
 
-export default function ButtonPanel({
-    ac, addition, modulus, division,
-    seven, eight, nine, multiple,
-    four, five, six, minus,
-    one, two, three, plus,
-    zero, dot, equals
-
-}) {
+export default function ButtonPanel() {
     return (
         <div>
             <div>
-                <button>
-                    {ac}
-                </button>
-                <button>
-                    {addition}
-                </button>
-                <button>
-                    {modulus}
-                </button>
-                <button>
-                    {division}
-                </button>
+            <Button name="AC" />
+            <Button name="+/-" />
+            <Button name="%" />
+            <Button name="÷" />
             </div>
             <div>
-                <button>
-                    {seven}
-                </button>
-                <button>
-                    {eight}
-                </button>
-                <button>
-                    {nine}
-                </button>
-                <button>
-                    {multiple}
-                </button>
+            <Button name="7" />
+            <Button name="8" />
+            <Button name="9" />
+            <Button name="X" />
             </div>
             <div>
-                <button>
-                    {four}
-                </button>
-                <button>
-                    {five}
-                </button>
-                <button>
-                    {six}
-                </button>
-                <button>
-                    {minus}
-                </button>
+            <Button name="4" />
+            <Button name="5" />
+            <Button name="6" />
+            <Button name="-" />
             </div>
             <div>
-                <button>
-                    {one}
-                </button>
-                <button>
-                    {two}
-                </button>
-                <button>
-                    {three}
-                </button>
-                <button>
-                    {plus}
-                </button>
+            <Button name="1" />
+            <Button name="2" />
+            <Button name="3" />
+            <Button name="+" />
             </div>
             <div>
-                <button>
-                    {zero}
-                </button>
-                <button>
-                    {dot}
-                </button>
-                <button>
-                    {equals}
-                </button>
+            <Button name="0" />
+            <Button name="." />
+            <Button name="=" />
             </div>
         </div>
     )

@@ -15,5 +15,4 @@ Display.propTypes = {
     result: PropTypes.string,
 }
 
-
 export default Display;
