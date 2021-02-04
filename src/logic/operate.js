@@ -16,9 +16,23 @@ const operate = (firstNumber, secondNumber, operation) => {
         case 'x':
             total = firstNumber.times(secondNumber);
             break;
-        case '-':
-            total = firstNumber.minus(secondNumber);
+        case '%':
+            total = firstNumber.div(100);
             break;
-
+        
+        case '÷':
+            if (secondNumber === 0){
+                total = "You divide a number by 0"
+            } else {
+                total = firstNumber.div(secondNumber);
+            break;        
+            }
+        
+        default:
+            break;
     }
-}
+
+    return total;
+};
+
+export default operate
