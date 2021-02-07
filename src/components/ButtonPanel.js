@@ -1,16 +1,13 @@
-import React from 'react';
-import { checkPropTypes } from 'prop-types';
+import PropTypes from 'prop-types';
 import Button from './Button';
 
-function handleClick(buttonName) {
+const ButtonPanel = props => {
   const handleClick = buttonName => {
     props.clickHandler(buttonName);
   };
-}
 
-export default function ButtonPanel() {
   return (
-    <div>
+    <>
       <div>
         <Button name="AC" clickHandler={handleClick} />
         <Button name="+/-" clickHandler={handleClick} />
@@ -40,6 +37,9 @@ export default function ButtonPanel() {
         <Button name="." clickHandler={handleClick} />
         <Button name="=" clickHandler={handleClick} />
       </div>
-    </div>
+    </>
   );
-}
+};
+
+ButtonPanel.propTypes = { clickHandler: PropTypes.func.isRequired };
+export default ButtonPanel;

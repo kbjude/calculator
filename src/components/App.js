@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unused-state */
 import './App.css';
 import { Component } from 'react';
 import ButtonPanel from './ButtonPanel';
@@ -11,8 +12,9 @@ export default class App extends Component {
     this.state = {
       total: null,
       next: null,
-      operation: null
+      operation: null,
     };
+
     this.handleClick = this.handleClick.bind(this);
   }
 
