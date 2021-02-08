@@ -61,7 +61,6 @@ const calculate = (buttonName, data) => {
     next,
     operation,
   };
-  console.log(calculator);
   return calculator;
 };
 
