@@ -10,7 +10,7 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      total: null,
+      total: 12,
       next: null,
       operation: null,
     };
@@ -19,7 +19,8 @@ export default class App extends Component {
   }
 
   handleClick(buttonName) {
-    this.setState(state => calculate(state, buttonName));
+    const newState = () => calculate(buttonName, { ...this.state });
+    this.setState(newState);
   }
 
   render() {
