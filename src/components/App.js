@@ -1,23 +1,35 @@
+/* eslint-disable react/no-unused-state */
 import './App.css';
+import { Component } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
 
-function App() {
-  return (
-    <>
-      <Display />
-      <ButtonPanel />
-    </>
-  );
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      total: 0,
+      next: null,
+      operation: null,
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(buttonName) {
+    const newState = () => calculate(buttonName, { ...this.state });
+    this.setState(newState);
+  }
+
+  render() {
+    const { total, next } = this.state;
+    return (
+      <>
+        <Display result={next || total || '0'} />
+        <ButtonPanel clickHandler={this.handleClick} />
+      </>
+    );
+  }
 }
-
-const data = {
-  total: 0,
-  next: 0,
-  operation: '',
-};
-
-calculate(data, '-');
-
-export default App;
