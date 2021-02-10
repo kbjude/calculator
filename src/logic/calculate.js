@@ -14,7 +14,7 @@ const calculate = (buttonName, data) => {
       break;
     case '+/-':
       total *= -1;
-      total *= -1;
+      next *= -1;
       break;
     case '%':
       if (next == null) {
