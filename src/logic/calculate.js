@@ -3,7 +3,7 @@ import operate from './operate';
 
 const calculate = (buttonName, data) => {
   let { total, next, operation } = data;
-  const symbolOperations = ['x', '+', '-', '÷', '%'];
+  const symbolOperations = ['x', '+', '-', '÷', '%', '='];
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 
   switch (buttonName) {
@@ -24,6 +24,9 @@ const calculate = (buttonName, data) => {
       }
       break;
 
+    case 'x':
+      total *= next;
+      break;
     case '.':
       if (!next.includes('.')) {
         next += '.';

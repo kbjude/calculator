@@ -10,7 +10,7 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      total: 12,
+      total: 0,
       next: null,
       operation: null,
     };
