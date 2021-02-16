@@ -1,37 +1,39 @@
 import React from 'react';
 import Button from './Button';
+import './ButtonPannel.css';
 
 export default function ButtonPanel() {
   return (
-    <div>
+
+    <div className="main-div">
       <div>
-        <Button name="AC" />
-        <Button name="+/-" />
-        <Button name="%" />
-        <Button name="÷" />
+        <Button name="AC" className="calc-number"/>
+        <Button name="+/-" className="calc-number" />
+        <Button name="%" className="calc-number" />
+        <Button name="÷" className="orange-button" />
       </div>
       <div>
-        <Button name="7" />
-        <Button name="8" />
-        <Button name="9" />
-        <Button name="X" />
+        <Button name="7" className="calc-number" />
+        <Button name="8" className="calc-number" />
+        <Button name="9" className="calc-number" />
+        <Button name="X" className="orange-button" />
       </div>
       <div>
-        <Button name="4" />
-        <Button name="5" />
-        <Button name="6" />
-        <Button name="-" />
+        <Button name="4" className="calc-number" />
+        <Button name="5" className="calc-number" />
+        <Button name="6" className="calc-number" />
+        <Button name="-" className="orange-button" />
       </div>
       <div>
-        <Button name="1" />
-        <Button name="2" />
-        <Button name="3" />
-        <Button name="+" />
+        <Button name="1" className="calc-number" />
+        <Button name="2" className="calc-number" />
+        <Button name="3" className="calc-number" />
+        <Button name="+" className="orange-button" />
       </div>
       <div>
-        <Button name="0" />
-        <Button name="." />
-        <Button name="=" />
+        <Button name="0" className="calc-number" />
+        <Button name="." className="calc-number" />
+        <Button name="=" className="orange-button" />
       </div>
     </div>
   );
