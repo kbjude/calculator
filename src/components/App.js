@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unused-state */
 import './App.css';
-import { Component } from 'react';
+import React, { Component } from 'react';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
