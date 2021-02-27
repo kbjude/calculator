@@ -43,3 +43,7 @@
   border: solid 5px;
   background-color: chartreuse;
 }
+
+.app {
+  display: flex;
+}
