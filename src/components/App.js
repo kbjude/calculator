@@ -27,8 +27,8 @@ export default class App extends Component {
     const { total, next } = this.state;
     return (
       <>
-        <Display result={next || total || '0'} />
-        <ButtonPanel clickHandler={this.handleClick} />
+        <Display result={next || total || '0'} className="display" />
+        <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
       </>
     );
   }
