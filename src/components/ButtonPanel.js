@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import Button from './Button';
+import './ButtonPanel.css';
 
 const ButtonPanel = props => {
   const handleClick = buttonName => {
@@ -7,7 +8,7 @@ const ButtonPanel = props => {
   };
 
   return (
-    <React.Fragment className="buttonpanel">
+    <>
       <div className="row1">
         <Button name="AC" clickHandler={handleClick} />
         <Button name="+/-" clickHandler={handleClick} />
@@ -37,7 +38,7 @@ const ButtonPanel = props => {
         <Button name="." clickHandler={handleClick} />
         <Button name="=" clickHandler={handleClick} />
       </div>
-    </React.Fragment>
+    </>
   );
 };
 
