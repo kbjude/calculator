@@ -9,3 +9,11 @@
 button {
     height: 100px;
 }
+
+.button-0 {
+    width: 22.4px !important;
+}
+
+.button-panel {
+    width: 50%;
+}

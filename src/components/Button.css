@@ -1,6 +1,6 @@
 .button {
-    width: 11.2rem;
+    width:25%;
     color: black;
     text-align: center;
-    border: 1px;
+    border: solid 1px;
 }
