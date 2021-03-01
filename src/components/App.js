@@ -26,10 +26,10 @@ export default class App extends Component {
   render() {
     const { total, next } = this.state;
     return (
-      <React.Fragment className="app">
+      <Switch className="app">
         <Display result={next || total || '0'} className="display" />
         <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
-      </React.Fragment>
+      </Switch>
     );
   }
 }
