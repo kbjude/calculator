@@ -30,14 +30,16 @@ export default class App extends Component {
   render() {
     const { total, next } = this.state;
     return (
-      <Switch className="app">
+      <>
         <Navbar />
-        <Route path="/" component={Home} />
-        <Route path="/Quote" component={Quote} />
-        <Route component={Error} />
-        <Display result={next || total || '0'} className="display" />
-        <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
-      </Switch>
+        <Switch className="app">
+          <Route path="/" exact component={Home} />
+          <Route path="/Quote" component={Quote} />
+          <Route component={Error} />
+          <Display result={next || total || '0'} className="display" />
+          <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
+        </Switch>
+      </>
     );
   }
 }
