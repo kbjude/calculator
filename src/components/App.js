@@ -9,7 +9,7 @@ import Home from './Home';
 import Quote from './Quote';
 import Navbar from './Navbar';
 
-export default class App extends Component {
+class Calculator extends Component {
   constructor(props) {
     super(props);
 
@@ -31,15 +31,23 @@ export default class App extends Component {
     const { total, next } = this.state;
     return (
       <>
-        <Navbar />
-        <Switch className="app">
-          <Route path="/" exact component={Home} />
-          <Route path="/Quote" component={Quote} />
-          <Route component={Error} />
-          <Display result={next || total || '0'} className="display" />
-          <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
-        </Switch>
+        <Display result={next || total || '0'} className="display" />
+        <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
       </>
     );
   }
 }
+
+const App = () => (
+  <div>
+    <Navbar />
+    <Switch className="app">
+      <Route path="/" exact component={Home} />
+      <Route path="/Quote" component={Quote} />
+      <Route path="/App" component={Calculator} />
+      <Route component={Error} />
+    </Switch>
+  </div>
+);
+
+export default App;
