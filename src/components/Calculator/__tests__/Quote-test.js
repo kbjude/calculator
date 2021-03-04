@@ -1,4 +1,3 @@
-import renderer from 'react-test-renderer';
 import Quote from '../../Quote';
 
 test('checks for quote', () => {

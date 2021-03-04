@@ -1,13 +1,11 @@
-import Display from '../../Display'
-import { string } from 'prop-types';
+import Display from '../../Display';
 
 describe('Display', () => {
-    it('Display result', () => {
-        expect(Display.props).toBe(Display.result);
-    })
+  it('Display result', () => {
+    expect(Display.props).toBe(Display.result);
+  });
 
-    it('Checks for type', () => {
-        expect(Display.propTypes).toString();
-    })
-
-})
+  it('Checks for type', () => {
+    expect(Display.propTypes).toString();
+  });
+});
