@@ -1,12 +1,7 @@
-import Display from './../../Display'
+import Display from '../../Display'
 import { string } from 'prop-types';
-import { ButtonPanel } from './../../ButtonPanel';
 
-describe('Calculator', () => {
-    it("passing test", () => {
-        expect(true).toBeTruthy();
-    });
-
+describe('Display', () => {
     it('Display result', () => {
         expect(Display.props).toBe(Display.result);
     })
