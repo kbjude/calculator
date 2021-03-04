@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => (
   <div>
-    <h1> Home Page</h1>
+    <h1 data-testid="home"> Home Page</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
