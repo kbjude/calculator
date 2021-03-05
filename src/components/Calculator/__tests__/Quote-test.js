@@ -1,5 +1,10 @@
+
+import { BrowserRouter } from 'react-router-dom';
+import renderer from 'react-test-renderer';
+import '@testing-library/jest-dom/extend-expect';
 import Quote from '../../Quote';
 
-test('checks for quote', () => {
-  expect(Quote).toString('Imagination is more important than knowledge');
+it('Succesfully displays', () => {
+  const quote = renderer.create(<BrowserRouter><Quote /></BrowserRouter>).toJSON();
+  expect(quote).toMatchSnapshot();
 });
