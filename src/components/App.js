@@ -30,10 +30,13 @@ class Calculator extends Component {
   render() {
     const { total, next } = this.state;
     return (
-      <>
-        <Display result={next || total || '0'} className="display" />
-        <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
-      </>
+      <div className="app-main">
+        <h1> Calculator</h1>
+        <>
+          <Display result={next || total || '0'} className="display" />
+          <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
+        </>
+      </div>
     );
   }
 }
@@ -49,5 +52,7 @@ const App = () => (
     </Switch>
   </div>
 );
-
+export {
+  Calculator,
+};
 export default App;

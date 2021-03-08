@@ -9,13 +9,3 @@ exports[`Succesfully displays 1`] = `
    
 </div>
 `;
-
-exports[`renders correctly 1`] = `
-<div
-  data-testid="quote"
->
-   
-  Beautiful quotes
-   
-</div>
-`;
