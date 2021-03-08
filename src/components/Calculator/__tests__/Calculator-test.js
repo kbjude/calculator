@@ -7,7 +7,7 @@ import {
 import { Calculator } from '../../App';
 
 it('Displaying out puts', () => {
-  const calc = renderer.create(<BrowserRouter>< calculate /></BrowserRouter>).toJSON();
+  const calc = renderer.create(<BrowserRouter><calculate /></BrowserRouter>).toJSON();
   expect(calc).toMatchSnapshot();
 });
 
@@ -16,7 +16,6 @@ describe('Showing Components', () => {
     render(<BrowserRouter><Calculator /></BrowserRouter>);
 
     expect(screen.getAllByRole('heading')[1]).toHaveTextContent('0');
-    expect(screen.getAllByRole('heading')[2]).toBeUndefined;
   });
 
   test('Showing Calculator Value', () => {
