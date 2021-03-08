@@ -9,7 +9,6 @@ const ButtonPanel = props => {
 
   return (
     <div className="button-panel">
-      <h1> Calculator</h1>
       <>
         <div className="row1">
           <Button name="AC" clickHandler={handleClick} />
