@@ -32,4 +32,22 @@ describe('Showing Components', () => {
     fireEvent.click(screen.getByText('='));
     expect(screen.getAllByRole('heading')[1]).toHaveTextContent('2');
   });
+
+  test('Carrying out an addition', () => {
+    render(<BrowserRouter><Calculator /></BrowserRouter>);
+    fireEvent.click(screen.getByText('3'));
+    fireEvent.click(screen.getByText('+'));
+    fireEvent.click(screen.getByText('1'));
+    fireEvent.click(screen.getByText('='));
+    expect(screen.getAllByRole('heading')[1]).toHaveTextContent('4');
+  });  
+
+  test('Carrying out a multiplication', () => {
+    render(<BrowserRouter><Calculator /></BrowserRouter>);
+    fireEvent.click(screen.getByText('3'));
+    fireEvent.click(screen.getByText('x'));
+    fireEvent.click(screen.getByText('2'));
+    fireEvent.click(screen.getByText('='));
+    expect(screen.getAllByRole('heading')[1]).toHaveTextContent('6');
+  });  
 });
