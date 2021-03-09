@@ -8,8 +8,8 @@ button {
   height: 100px;
 }
 
-.button-0 {
-  width: 22.4px !important;
+.wide {
+  width: 50% !important;
 }
 
 .button-panel {
