@@ -1,0 +1,18 @@
+.row1,
+.row2,
+.row3 .row4 .row5 {
+  height: 100px;
+}
+
+button {
+  height: 100px;
+}
+
+.wide {
+  width: 50% !important;
+}
+
+.button-panel {
+  width: 715px;
+  margin-left: 5px;
+}
