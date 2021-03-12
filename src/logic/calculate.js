@@ -1,7 +1,7 @@
 // import { string, number } from 'prop-types';
 import operate from './operate';
 
-const calculate = (buttonName, data) => {
+const Calculate = (buttonName, data) => {
   let { total, next, operation } = data;
   const symbolOperations = ['x', '+', '-', '÷', '%', '='];
   const numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
@@ -59,12 +59,12 @@ const calculate = (buttonName, data) => {
     }
   }
 
-  const calculator = {
+  const Calculator = {
     total,
     next,
     operation,
   };
-  return calculator;
+  return Calculator;
 };
 
-export default calculate;
+export default Calculate;

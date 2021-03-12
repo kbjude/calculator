@@ -1,11 +1,15 @@
 /* eslint-disable react/no-unused-state */
 import './App.css';
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import ButtonPanel from './ButtonPanel';
 import Display from './Display';
 import calculate from '../logic/calculate';
+import Home from './Home';
+import Quote from './Quote';
+import Navbar from './Navbar';
 
-export default class App extends Component {
+class Calculator extends Component {
   constructor(props) {
     super(props);
 
@@ -26,10 +30,29 @@ export default class App extends Component {
   render() {
     const { total, next } = this.state;
     return (
-      < React.Fragment className="app">
-        <Display result={next || total || '0'} className="display" />
-        <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
-      </ React.Fragment >
+      <div className="app-main">
+        <h1> Calculator</h1>
+        <>
+          <Display result={next || total || '0'} className="display" />
+          <ButtonPanel clickHandler={this.handleClick} className="button-panel" />
+        </>
+      </div>
     );
   }
 }
+
+const App = () => (
+  <div>
+    <Navbar />
+    <Switch className="app">
+      <Route path="/" exact component={Home} />
+      <Route path="/Quote" component={Quote} />
+      <Route path="/App" component={Calculator} />
+      <Route component={Error} />
+    </Switch>
+  </div>
+);
+export {
+  Calculator,
+};
+export default App;

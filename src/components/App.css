@@ -41,7 +41,12 @@
 .display {
   width: 700px;
   border: solid 5px;
-  background-color: chartreuse;
+  background-color: gray;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  padding: 7px;
+  text-align: right;
 }
 
 .app {

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Succesfully displays 1`] = `
+<div
+  data-testid="quote"
+>
+   
+  Beautiful quotes
+   
+</div>
+`;
